@@ -19,15 +19,19 @@ function Pelicula(id, titulo, descripcion, año, duracion, actores, director){
     //     this.actores.push(actor);
     // }
 
-    function saludar() {
-        alert('Hola Gato');
+    this.agregarActor = function(actor) {
+        var arrayActores = [];
+        this.actores = this.actores.push(actor);
+    }
+
+    this.saludar = function() {
+        alert('Hola Gatoooo');
     }
 
 }
 
 var arrayActores = [];
 
-var elPadrinoB = new Pelicula(1,'El Padrino','El padrino es una película estadounidense de 1972',1972,
-    175,arrayActores);
+var elPadrinoB = new Pelicula(1,'El Padrino','Película estadounidense de 1972',1972,175,arrayActores,'Francis Ford Coppola');
 
 elPadrinoB.saludar();
